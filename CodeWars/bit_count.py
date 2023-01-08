@@ -2,9 +2,7 @@
 def count_bits(n):
     result = 0
     while n != 0:
-        bit = n % 2
-        if bit == 1:
-            result += 1
+        result += n % 2
         n //= 2
     return result
 
